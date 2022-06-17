@@ -1,8 +1,12 @@
 import React from 'react'
+import Message from '../components/layout/Message'
 
 const Projects = () => {
     return (
-        <div>Projects</div>
+        <div>
+            <h1>Meus Projetos</h1>
+            <Message />
+        </div>
     )
 }
 
