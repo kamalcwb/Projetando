@@ -21,7 +21,7 @@ const NewProject = () => {
             .then((resp) => resp.json())
             .then((data) => {
                 console.log(data)
-                navigate('/projects', { message: 'Seu projeto foi criado com sucesso!' })
+                navigate('/projects', { state: { message: 'Projeto criado com sucesso!' } })
             })
             .catch(err => console.log(err))
     }
