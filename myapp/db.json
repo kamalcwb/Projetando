@@ -65,6 +65,17 @@
       "cost": 0,
       "services": [],
       "id": 6
+    },
+    {
+      "name": "biluzin",
+      "budget": "60000000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
     }
   ],
   "categories": [
