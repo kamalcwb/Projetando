@@ -6,9 +6,11 @@ import Container from '../components/layout/Container'
 import LinkButton from '../components/layout/LinkButton'
 import ProjectCard from '../components/project/ProjectCard'
 import { useState, useEffect } from 'react'
+import Loading from '../components/layout/Loading'
 
 const Projects = () => {
     const [projects, setProjects] = useState([])
+    const [removeLoading, setRemoveLoading] = useState(false)
 
     const location = useLocation()
     let message = '';
@@ -17,16 +19,19 @@ const Projects = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/projects', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then(resp => resp.json())
-            .then(data => {
-                setProjects(data)
-            })
-            .catch((err) => console.log(err))
+        setTimeout(() => {
+            fetch('http://localhost:5000/projects', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }).then(resp => resp.json())
+                .then(data => {
+                    setProjects(data)
+                    setRemoveLoading(true)
+                })
+                .catch((err) => console.log(err))
+        }, 500)
     }, [])
 
     return (
@@ -47,6 +52,10 @@ const Projects = () => {
                             key={project.id}
                         />
                     ))}
+                {!removeLoading && <Loading />}
+                {removeLoading && projects.length === 0(
+                    <p>Não há projetos cadastrados!</p>
+                )}
             </Container>
         </div>
     )
