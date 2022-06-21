@@ -22,10 +22,10 @@ const ProjectCard = ({ id, name, budget, category, handleRemove }) => {
                 {category}
             </p>
             <div className={styles.project_card_actions}>
-                <Link to='/'><BsPencil />Editar</Link>
+                <Link to={`/project/${id}`} > <BsPencil />Editar</Link >
                 <button onClick={remove}><BsFillTrashFill />Excluir</button>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
