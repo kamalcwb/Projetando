@@ -58,7 +58,7 @@ const Project = () => {
                             </div>
                         ) : (
                             <div className={styles.project_info}>
-                                <p>Detalhes do projeto</p>
+                                <p>form</p>
                             </div>
                         )}
                     </div>
