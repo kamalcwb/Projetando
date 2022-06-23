@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "Daemon Salvattore",
-      "budget": "456",
+      "name": "Projetin",
+      "budget": "456000",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],

@@ -6,6 +6,8 @@ import styles from './Project.module.css'
 import Loading from '../components/layout/Loading'
 import Container from '../components/layout/Container'
 
+import ProjectForm from '../components/project/ProjectForm'
+
 const Project = () => {
 
     const { id } = useParams()
@@ -31,14 +33,30 @@ const Project = () => {
         setShowProjectForm(!showProjectForm)
     }
 
+    const editPost = (project) => {
+        fetch(`http://localhost:5000/projects/${project.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(project)
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+                setProject(data)
+                setShowProjectForm(false)
+            })
+            .catch(err => console.log(err))
+    }
+
     return (
         <div>{project.name ?
             <div className={styles.project_details}>
                 <Container customClass="column">
-                    <div className={styles.detais_container}>
+                    <div className={styles.details_container}>
                         <h1>Projeto: {project.name}</h1>
                         <button onClick={toggleProjectForm} className={styles.btn}>
-                            {!showProjectForm ? 'Mostrar projeto' : 'Fechar'}
+                            {!showProjectForm ? 'Editar Projeto' : 'Fechar'}
                         </button>
                         {!showProjectForm ? (
                             <div className={styles.project_info}>
@@ -58,7 +76,7 @@ const Project = () => {
                             </div>
                         ) : (
                             <div className={styles.project_info}>
-                                <p>form</p>
+                                <ProjectForm handleSubmit={editPost} btnText="Concluir Edição" projectData={project} />
                             </div>
                         )}
                     </div>
