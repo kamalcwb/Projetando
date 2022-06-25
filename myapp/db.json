@@ -2,55 +2,50 @@
   "projects": [
     {
       "name": "Projetin",
-      "budget": "45600",
+      "budget": "50000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": null,
+      "cost": 7500,
       "services": [
         {
-          "": "servico isso aqui",
-          "id": "86ddc1d2-dee2-4b91-afcf-bdf8530ddf21"
+          "name": "games",
+          "cost": "4500",
+          "description": "dev games",
+          "id": "bb98d3d0-e169-4b58-8a09-455457f351ca"
+        },
+        {
+          "name": "servidor",
+          "cost": "600",
+          "description": "servidor game",
+          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
+        },
+        {
+          "name": "servidor",
+          "cost": "600",
+          "description": "servidor game",
+          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
+        },
+        {
+          "name": "servidor",
+          "cost": "600",
+          "description": "servidor game",
+          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
+        },
+        {
+          "name": "servidor",
+          "cost": "600",
+          "description": "servidor game",
+          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
+        },
+        {
+          "name": "servidor",
+          "cost": "600",
+          "description": "servidor game",
+          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
         }
-      ],
-      "id": 6
-    },
-    {
-      "name": "biluzin",
-      "budget": "60000000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": null,
-      "services": [
-        {
-          "": "elojob pro gold",
-          "id": "9dad8e01-49fd-4f87-aebf-d994ed4a756f"
-        },
-        {
-          "": "elojob pro gold",
-          "id": "37d2bfe0-348b-4866-bdb6-732ff7c5ba0b"
-        },
-        {
-          "": "elojob pro gold",
-          "id": "37d2bfe0-348b-4866-bdb6-732ff7c5ba0b"
-        },
-        {
-          "": "elojob pro gold",
-          "id": "37d2bfe0-348b-4866-bdb6-732ff7c5ba0b"
-        },
-        {
-          "": "elojob",
-          "id": "90b1f86c-79f6-4c5a-86a7-23d58f30d031"
-        },
-        {
-          "": "sdfsdf",
-          "id": "53041aa8-9cb4-4970-9906-a61ca60daaac"
-        }
-      ],
-      "id": 7
+      ]
     }
   ],
   "categories": [

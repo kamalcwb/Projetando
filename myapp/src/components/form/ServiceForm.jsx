@@ -25,7 +25,7 @@ const ServiceForm = ({ handleSubmit, btnText, projectData }) => {
             <Input
                 type="text"
                 text="Nome do serviço"
-                nome="name"
+                name="name"
                 placeholder="Insira o nome do serviço"
                 handleOnChange={handleChange}
             />
@@ -33,7 +33,7 @@ const ServiceForm = ({ handleSubmit, btnText, projectData }) => {
             <Input
                 type="number"
                 text="Custo do serviço"
-                nome="cost"
+                name="cost"
                 placeholder="Insira o valor total"
                 handleOnChange={handleChange}
             />
@@ -41,7 +41,7 @@ const ServiceForm = ({ handleSubmit, btnText, projectData }) => {
             <Input
                 type="text"
                 text="Descrição do serviço"
-                nome="description"
+                name="description"
                 placeholder="Descreva o serviço"
                 handleOnChange={handleChange}
             />
