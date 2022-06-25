@@ -7,8 +7,13 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": null,
+      "services": [
+        {
+          "": "servico isso aqui",
+          "id": "86ddc1d2-dee2-4b91-afcf-bdf8530ddf21"
+        }
+      ],
       "id": 6
     },
     {
@@ -18,8 +23,33 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": null,
+      "services": [
+        {
+          "": "elojob pro gold",
+          "id": "9dad8e01-49fd-4f87-aebf-d994ed4a756f"
+        },
+        {
+          "": "elojob pro gold",
+          "id": "37d2bfe0-348b-4866-bdb6-732ff7c5ba0b"
+        },
+        {
+          "": "elojob pro gold",
+          "id": "37d2bfe0-348b-4866-bdb6-732ff7c5ba0b"
+        },
+        {
+          "": "elojob pro gold",
+          "id": "37d2bfe0-348b-4866-bdb6-732ff7c5ba0b"
+        },
+        {
+          "": "elojob",
+          "id": "90b1f86c-79f6-4c5a-86a7-23d58f30d031"
+        },
+        {
+          "": "sdfsdf",
+          "id": "53041aa8-9cb4-4970-9906-a61ca60daaac"
+        }
+      ],
       "id": 7
     }
   ],
