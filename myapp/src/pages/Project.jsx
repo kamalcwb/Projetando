@@ -38,7 +38,7 @@ const Project = () => {
             })
                 .catch(err => console.log(err))
 
-        }, 500)
+        }, 300)
     }, [id])
 
     function createService(project) {
@@ -64,10 +64,12 @@ const Project = () => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(project)
+            body: JSON.stringify(project),
         })
             .then((resp) => resp.json())
-            .then((data) => { })
+            .then((data) => {
+                setShowServiceForm(false)
+            })
             .catch((err) => console.log(err))
     }
 
@@ -156,8 +158,7 @@ const Project = () => {
                     </div>
                     <h2>Serviços</h2>
                     <Container customClass="start">
-                        {
-                            services.length > 0 &&
+                        {services.length > 0 &&
                             services.map((service) => (
                                 <ServiceCard
                                     id={service.id}
@@ -169,9 +170,7 @@ const Project = () => {
                                 />
                             ))
                         }
-                        {
-                            services.length === 0 && <p>Cadastre seu primeiro serviço.</p>
-                        }
+                        {services.length === 0 && <p>Cadastre seu primeiro serviço.</p>}
                     </Container>
                 </Container>
             </div>
