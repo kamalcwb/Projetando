@@ -2,50 +2,21 @@
   "projects": [
     {
       "name": "Projetin",
-      "budget": "50000",
+      "budget": "6000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 7500,
+      "cost": 500,
       "services": [
         {
-          "name": "games",
-          "cost": "4500",
-          "description": "dev games",
-          "id": "bb98d3d0-e169-4b58-8a09-455457f351ca"
-        },
-        {
-          "name": "servidor",
-          "cost": "600",
-          "description": "servidor game",
-          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
-        },
-        {
-          "name": "servidor",
-          "cost": "600",
-          "description": "servidor game",
-          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
-        },
-        {
-          "name": "servidor",
-          "cost": "600",
-          "description": "servidor game",
-          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
-        },
-        {
-          "name": "servidor",
-          "cost": "600",
-          "description": "servidor game",
-          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
-        },
-        {
-          "name": "servidor",
-          "cost": "600",
-          "description": "servidor game",
-          "id": "eceb60f9-0ee0-4c15-8569-da3e16d7c8be"
+          "name": "desenvolvedor backend",
+          "cost": "500",
+          "description": "desenvolver api",
+          "id": "ff3209b7-274b-4cfa-a1d3-b566f97ea51f"
         }
-      ]
+      ],
+      "id": 1
     }
   ],
   "categories": [

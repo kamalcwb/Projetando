@@ -32,10 +32,12 @@ const Project = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-            }).then((resp) => resp.json()).then((data) => {
-                setProject(data)
-                setServices(data.services)
             })
+                .then((resp) => resp.json())
+                .then((data) => {
+                    setProject(data)
+                    setServices(data.services)
+                })
                 .catch(err => console.log(err))
 
         }, 300)
