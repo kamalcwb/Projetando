@@ -1,22 +1,37 @@
 {
   "projects": [
     {
-      "name": "Projetin",
-      "budget": "6000",
+      "name": "Projeto Planejamento",
+      "budget": "3000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Projeto Desenvolimento",
+      "budget": "5000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 500,
-      "services": [
-        {
-          "name": "desenvolvedor backend",
-          "cost": "500",
-          "description": "desenvolver api",
-          "id": "ff3209b7-274b-4cfa-a1d3-b566f97ea51f"
-        }
-      ],
-      "id": 1
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Projeto Design",
+      "budget": "5000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [
